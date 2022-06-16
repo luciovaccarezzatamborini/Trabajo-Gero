@@ -543,8 +543,8 @@ GameObject:
   - component: {fileID: 304689529}
   - component: {fileID: 304689528}
   - component: {fileID: 304689527}
-  - component: {fileID: 304689525}
   - component: {fileID: 304689530}
+  - component: {fileID: 304689525}
   m_Layer: 0
   m_Name: plataformagiratoria
   m_TagString: Ground
@@ -617,7 +617,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 304689524}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5, y: 0, z: -45.6}
+  m_LocalPosition: {x: 8.1, y: 0, z: -45.6}
   m_LocalScale: {x: 10, y: 0.2, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1001,7 +1001,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 507983609}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10, y: 0, z: -55}
+  m_LocalPosition: {x: -14.87, y: 0, z: -55}
   m_LocalScale: {x: 10, y: 0.2, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1478,7 +1478,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 691172131}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5, y: 0, z: -64.6}
+  m_LocalPosition: {x: 8.1, y: 0, z: -64.6}
   m_LocalScale: {x: 10, y: 0.2, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2837,6 +2837,7 @@ GameObject:
   - component: {fileID: 1636782952}
   - component: {fileID: 1636782951}
   - component: {fileID: 1636782950}
+  - component: {fileID: 1636782955}
   m_Layer: 0
   m_Name: plataformagiratoria3
   m_TagString: Ground
@@ -2865,7 +2866,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1636782949}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 83bef90f330165c49ad2c5bfbf83c498, type: 3}
   m_Name: 
@@ -2923,12 +2924,24 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1636782949}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10, y: 0, z: -55}
+  m_LocalPosition: {x: 16.9, y: 0, z: -55}
   m_LocalScale: {x: 10, y: 0.2, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1636782955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1636782949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2be1014f626ab814f889bda1646883d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1644654967
 GameObject:
   m_ObjectHideFlags: 0
@@ -3241,7 +3254,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1686481792}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5, y: 0, z: -64.6}
+  m_LocalPosition: {x: -7.34, y: 0, z: -64.6}
   m_LocalScale: {x: 10, y: 0.2, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3561,7 +3574,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1866399092}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5, y: 0, z: -45.6}
+  m_LocalPosition: {x: -7.34, y: 0, z: -45.6}
   m_LocalScale: {x: 10, y: 0.2, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3574,7 +3587,7 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1866399092}
-  m_Material: {fileID: 13400000, guid: e52fb17f9b1e7fd48b8955f1391d3688, type: 2}
+  m_Material: {fileID: 13400000, guid: c2815a7ab32e42c4bb42f59caacb8ec1, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -4091,7 +4104,7 @@ PrefabInstance:
     - target: {fileID: 8347681684736206948, guid: cad599701ea35c541bba29ea3a84086c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -101.69
+      value: -35.2
       objectReference: {fileID: 0}
     - target: {fileID: 8347681684736206948, guid: cad599701ea35c541bba29ea3a84086c,
         type: 3}
