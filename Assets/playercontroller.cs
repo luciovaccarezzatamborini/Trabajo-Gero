@@ -16,9 +16,11 @@ public class playercontroller : MonoBehaviour
     bool jump = true;
 
     public GameObject panel;
+    public GameObject panelperdiste;
+
     void Start()
     {
-        isAble = false;
+       
 
         rb = GetComponent<Rigidbody>();
     }
@@ -83,8 +85,8 @@ public class playercontroller : MonoBehaviour
 
         if (col.gameObject.tag == "Respawn")
         {
-            transform.position = new Vector3(0, 1.02f, 5.15f);
-            transform.eulerAngles = new Vector3(0, 180, 0);
+            panelperdiste.SetActive(true);
+
         }
 
         if (col.gameObject.tag == "Finish")

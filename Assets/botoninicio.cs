@@ -7,10 +7,12 @@ public class botoninicio : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
     public GameObject player;
     public GameObject panel;
+    public GameObject panelperdiste;
+
     // Update is called once per frame
     void Update()
     {
@@ -20,6 +22,13 @@ public class botoninicio : MonoBehaviour
     public void BotonInicio()
     {
         panel.SetActive(false);
+        player.transform.position = new Vector3(0, 1.02f, 5.15f);
+        player.transform.eulerAngles = new Vector3(0, 180, 0);
+    }
+
+    public void BotonPerdiste()
+    {
+        panelperdiste.SetActive(false);
         player.transform.position = new Vector3(0, 1.02f, 5.15f);
         player.transform.eulerAngles = new Vector3(0, 180, 0);
     }

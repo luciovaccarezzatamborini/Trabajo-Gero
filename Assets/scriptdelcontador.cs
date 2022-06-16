@@ -5,29 +5,46 @@ using UnityEngine.UI;
 
 public class scriptdelcontador : MonoBehaviour
 {
-    float tiempoActual;
-    public float tiempoparaelcontador;
+
+
+    public int SegundosTotales;
+    private float Contador;
+
    public Text cuentaregresiva;
+
+    private bool StopCounting = false;
     public GameObject panel;
+
     void Start()
     {
-        tiempoActual = tiempoparaelcontador;
+        Contador = Time.time;
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (tiempoActual == 0)
+
+        if(Time.time > Contador + 1)
         {
-            panel.SetActive(true);
-        }
-        else
-        {
-            tiempoActual -= 1 * Time.deltaTime;
-            cuentaregresiva.text = Mathf.Floor(tiempoActual).ToString();
+            Contador++;
+            SegundosTotales--;
         }
 
-       
+        if(!StopCounting) cuentaregresiva.text = SegundosTotales.ToString();
+
+        if(SegundosTotales == 0)
+        {
+            panel.SetActive(true);
+            StopCounting = true;
+
+        }
+
+        if (panel.active)
+        {
+            StopCounting = true;
+        }
+        
+
     }
 }

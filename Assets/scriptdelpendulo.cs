@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class scriptdelpendulo : MonoBehaviour
 {
+    public GameObject objeto;
+    private bool angulolimite = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +15,27 @@ public class scriptdelpendulo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.eulerAngles += new Vector3(0, 0, -5);
+       if (transform.eulerAngles.x > 88 && transform.eulerAngles.x <90)
+        {
+            angulolimite = true;
+        }
+        if (transform.eulerAngles.x > 270 && transform.eulerAngles.x < 280)
+        {
+            angulolimite = false;
+        }
+
+        if (angulolimite)
+        {
+            transform.eulerAngles -= new Vector3(1f, 0, 0);
+
+        }
+
+        else
+        {
+            transform.eulerAngles += new Vector3(2f, 0, 0);
+        }
+
+
+
     }
 }
