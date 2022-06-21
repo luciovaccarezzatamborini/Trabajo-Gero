@@ -18,6 +18,8 @@ public class playercontroller : MonoBehaviour
 
     public GameObject panel;
     public GameObject panelperdiste;
+  
+
 
     void Start()
     {
@@ -35,7 +37,10 @@ public class playercontroller : MonoBehaviour
            
            
                 transform.Translate(0, 0, speed);
+
             
+
+
 
 
         }
@@ -62,7 +67,13 @@ public class playercontroller : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-          
+            for (int i = 0; i < 4; i++)
+            {
+                GameObject sphere = Instantiate(prefab, transform.position, transform.rotation) as GameObject;
+                sphere.name = "Sphere";
+                Destroy(sphere, 3f);
+            }
+
             if (  jump) {
 
                 jump = false;
@@ -93,6 +104,8 @@ public class playercontroller : MonoBehaviour
         if (col.gameObject.tag == "Finish")
         {
             panel.SetActive(true);
+
+           
         }
     }
 }
