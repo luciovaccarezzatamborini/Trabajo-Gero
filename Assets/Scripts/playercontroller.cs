@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class playercontroller : MonoBehaviour
 {
@@ -85,7 +86,7 @@ public class playercontroller : MonoBehaviour
 
         if (col.gameObject.tag == "Respawn")
         {
-            panelperdiste.SetActive(true);
+            SceneManager.LoadScene("escenaperdiste");
 
         }
 
@@ -93,5 +94,6 @@ public class playercontroller : MonoBehaviour
         {
             panel.SetActive(true);
         }
-        }
+    }
 }
+
