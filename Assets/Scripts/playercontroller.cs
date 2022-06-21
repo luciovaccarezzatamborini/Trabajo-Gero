@@ -67,7 +67,7 @@ public class playercontroller : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            for (int i = 0; i < 4; i++)
+            for (int i = 0; i < 2; i++)
             {
                 GameObject sphere = Instantiate(prefab, transform.position, transform.rotation) as GameObject;
                 sphere.name = "Sphere";
@@ -103,7 +103,7 @@ public class playercontroller : MonoBehaviour
 
         if (col.gameObject.tag == "Finish")
         {
-            panel.SetActive(true);
+            SceneManager.LoadScene("escenaganaste");
 
            
         }
